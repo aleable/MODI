@@ -1,0 +1,10 @@
+JFT_00020.jpg, 2
+JFT_00023.jpg, 2
+JFT_00170.jpg, 4
+JFT_00173.jpg, 4
+JFT_00938.jpg, 20
+JFT_00941.jpg, 20
+JFT_01250.jpg, 26
+JFT_01256.jpg, 26
+JFT_01476.jpg, 30
+JFT_01479.jpg, 30
