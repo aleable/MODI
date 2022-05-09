@@ -6,7 +6,7 @@ ___
 
 **MODI** (**M**ulticommodity **O**ptimal transport **D**ynamics on **I**mages) is a Python implementation of the algorithms used in:
 
-- [1] Alessandro Lonardi\*, Diego Baptista\*, and Caterina De Bacco. <i>Immiscible Color Flows in Optimal Transport Networks for Image Classification</i>. [<a href="https://arxiv.org/abs/2205.02938">arXiv</a>]
+- [1] Alessandro Lonardi\*, Diego Baptista\*, and Caterina De Bacco. <i>Immiscible Color Flows in Optimal Transport Networks for Image Classification</i> [<a href="https://arxiv.org/abs/2205.02938">arXiv</a>].
 
 This is a scheme capable of performing supervised classification by finding multicommodty optimal transport paths between a pair of images.
 
