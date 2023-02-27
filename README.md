@@ -4,11 +4,9 @@
 
 ___
 
-https://img.shields.io/badge/%F0%9F%8C%B3-CO2%20compensation-green
-
 **MODI** (**M**ulticommodity **O**ptimal transport **D**ynamics on **I**mages) is a Python implementation of the algorithms used in:
 
-- [1] Alessandro Lonardi\*, Diego Baptista\*, and Caterina De Bacco. <i>Immiscible Color Flows in Optimal Transport Networks for Image Classification</i>. <a href="https://doi.org/10.3389/fphy.2023.1089114">Front. Phys. 11:1089114</a>. [<a href="https://arxiv.org/abs/2205.02938">arXiv</a>] [<a href="https://github.com/aleable/MODI/tree/main/misc/POSTER_MODI.pdf">poster</a>].
+- [1] Alessandro Lonardi\*, Diego Baptista\*, and Caterina De Bacco. <i>Immiscible Color Flows in Optimal Transport Networks for Image Classification</i>. <a href="https://doi.org/10.3389/fphy.2023.1089114">Front. Phys. 11:1089114</a>. [<a href="https://arxiv.org/abs/2205.02938">arXiv</a>] [<a href="https://github.com/aleable/MODI/tree/main/misc/POSTER_MODI.pdf">poster</a>] [<a href="https://www.treedom.net/en/page/register?id=49Z-KEWX">CO2 compensation</a>].
 
 This is a scheme capable of performing supervised classification by finding multicommodty optimal transport paths between a pair of images.
 
