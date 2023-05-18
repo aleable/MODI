@@ -7,8 +7,7 @@ Contributors:
 """
 
 import numpy as np
-from scipy.sparse import diags
-from scipy.sparse import identity
+from scipy.sparse import diags, identity, csr_matrix
 from scipy.sparse.linalg import spsolve
 
 
@@ -95,8 +94,7 @@ def ot_solve(self):
                 cost_update: float, updated cost
             """
 
-            td_mat = np.diag(self.tdens)
-            flux_mat = np.matmul(td_mat * diags(1/self.length, 0) * np.transpose(self.B), pot)
+            flux_mat = csr_matrix.dot(diags(self.tdens/self.length) * self.B.T, pot)
 
             # multicommodity step
             try:
