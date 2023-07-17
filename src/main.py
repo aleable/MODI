@@ -15,8 +15,8 @@ from skimage.color import rgb2gray
 from skimage.measure import block_reduce
 from scipy.ndimage import gaussian_filter
 
-from initialization import *
-from dynamics import *
+from .initialization import *
+from .dynamics import *
 
 # warn options
 if not sys.warnoptions:
