@@ -37,6 +37,11 @@ This script can be executed with the command:
 ```bash
 python setup.py
 ```
+Please note that one of the dependencies, `scikit-umfpack`, may not be easily installable using pip3. In this case, it is recommended to use conda for installing it:
+
+```bash
+conda install -c conda-forge scikit-umfpack
+```
 
 Now, you are ready to use the code! To do so, you can simply use the notebook ```dashboard.ipynb```, from which you can access our solver. <br/>
 
