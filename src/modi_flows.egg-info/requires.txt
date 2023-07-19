@@ -1,0 +1,11 @@
+numpy>=1.9.3
+networkx>=2.5.0
+scipy
+scikit-image>=0.16.0
+jupyter
+nbimporter
+pandas
+tqdm
+Pillow
+matplotlib
+scikit-umfpack
