@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools-scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modi-flows"
+dynamic = ["version"]
+description = "MODI: Multicommodity Optimal Transport-based Dynamics for Image Classification"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE.txt"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "multicommodity",
+    "optimal transport",
+    "image classification",
+]
+
+authors = [
+    {name = "Alessandro Lonardi"}, 
+    {name = "Diego Baptista"}
+]
+
+dependencies = [
+    'numpy>=1.9.3',
+    'networkx>=2.5.0',
+    'scipy',
+    'scikit-image>=0.16.0',
+    'jupyter',
+    'nbimporter',
+    'pandas',
+    'tqdm',
+    'Pillow',
+    'matplotlib',
+    'scikit-umfpack'
+]
+
+[project.urls]
+homepage = "https://github.com/aleable/MODI"
+bug-tracker = "https://github.com/aleable/MODI/-/issues"
+repository = "https://github.com/aleable/MODI"
+
+[options]
+package_dir = {"" = "src"}
+python_requires = ">=3.6"
+
+[options.packages.find]
+where = "src"

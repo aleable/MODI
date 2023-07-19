@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='modi',
-    version='0.1.0',
+    name='modi-flows',
+    version='0.11.0',
     description='MODI: Multicommodity Optimal Transport-based Dynamics for Image Classification',
-    author='Alessandro Lonardi',
-    author_email='alessandro.lonardi.vr@gmail.com',
+    author=['Alessandro Lonardi','Diego Baptista'],
+    author_email='diego.theuerkauf@tuebingen.mpg.de',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     install_requires=[
-        'numpy==1.20.0',
-        'networkx==2.5.1',
-        'scipy==1.7.0',
-        'scikit-image==0.18.3',
+        'numpy>=1.9.3',
+        'networkx>=2.5.0',
+        'scipy',
+        'scikit-image>=0.16.0',
         'jupyter',
         'nbimporter',
         'pandas',
