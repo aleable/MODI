@@ -9,6 +9,7 @@ Contributors:
 import numpy as np
 from scipy.sparse import diags, identity, csr_matrix
 from scipy.sparse.linalg import spsolve
+import scipy.sparse as sp
 
 
 def ot_solve(self):
@@ -126,6 +127,8 @@ def ot_solve(self):
         it = 0
         # only needed if spsolve has problems
         prng = np.random.RandomState(seed=self.seed)
+
+        self.B = sp.csc_matrix(self.B) # to solve dimension mismatch errors
         stiff = self.B * diags(self.tdens, 0) * diags(1/self.length, 0) * self.B.transpose()
 
         # to increase if singularity issues arise in spsolve
