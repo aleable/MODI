@@ -4,7 +4,7 @@
 
 ___
 
-**🚧 Important note 🚧:** MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not esitate to contact us.
+**🚧 Important note 🚧:** MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
 
 **MODI** (**M**ulticommodity **O**ptimal transport **D**ynamics on **I**mages) is a Python implementation of the algorithms used in:
 
@@ -14,6 +14,22 @@ This is a scheme capable of performing supervised classification by finding mult
 
 **If you use this code, please cite [1].**<br/>
 The symbol “*” denotes equal contribution.
+
+
+## Requirements
+
+All the dependencies needed to run the algorithm can be installed by:
+
+```bash
+pip install -i https://test.pypi.org/simple/ modi-flows
+```
+Please note that one of the dependencies, scikit-umfpack, may not be easily installable using pip3. In this case, it is recommended to use conda for installing it:
+```bash
+conda install -c conda-forge scikit-umfpack
+```
+In case that the installation of `modi-flows` fails due to this, install first `scikit-umfpack` first and then try installing our package again from `pip`.
+
+Now, you are ready to use the code! To do so, you can simply use the notebook ```dashboard.ipynb```, from which you can access our solver. <br/>
 
 
 ## What's included
@@ -34,7 +50,7 @@ git clone https://github.com/aleable/MODI
 ```
 
 
-**You are ready to test the code! But if you want to know how click [HERE](https://github.com/aleable/MODI/tree/main/code).**
+**You are ready to test the code! But if you want to know how click [HERE](https://github.com/aleable/MODI/tree/main/src/modi_flows).**
 
 ## Contacts
 
