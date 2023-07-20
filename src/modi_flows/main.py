@@ -15,8 +15,11 @@ from skimage.color import rgb2gray
 from skimage.measure import block_reduce
 from scipy.ndimage import gaussian_filter
 
-from .initialization import *
-from .dynamics import *
+#from . import initialization as init
+#from . import dynamics as dyn
+
+import modi_flows.initialization as init
+import modi_flows.dynamics as dyn 
 
 # warn options
 if not sys.warnoptions:
@@ -64,8 +67,8 @@ class MODI:
             self.c, np.array: extended ground distance matrix, C
         """
 
-        ot_setup(self)
-        j = ot_solve(self)
+        init.ot_setup(self)
+        j = dyn.ot_solve(self)
 
         return j, self.r, self.s, self.c
 
@@ -79,7 +82,7 @@ class MODI:
             self.c, np.array: extended ground distance matrix, C
         """
 
-        ot_setup(self)
+        init.ot_setup(self)
 
         return self.r, self.s, self.c
 
