@@ -40,9 +40,9 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "https://github.com/aleable/MODI"
-bug-tracker = "https://github.com/aleable/MODI/-/issues"
-repository = "https://github.com/aleable/MODI"
+homepage = "https://github.com/diegoabt/MODI"
+bug-tracker = "https://github.com/diegoabt/MODI/-/issues"
+repository = "https://github.com/diegoabt/MODI"
 
 [options]
 package_dir = {"" = "src"}

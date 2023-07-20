@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='modi-flows',
-    version='0.11.0',
+    version='0.13.0',
     description='MODI: Multicommodity Optimal Transport-based Dynamics for Image Classification',
     author=['Alessandro Lonardi','Diego Baptista'],
     author_email='diego.theuerkauf@tuebingen.mpg.de',
