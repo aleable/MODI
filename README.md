@@ -41,16 +41,6 @@ Now, you are ready to use the code! To do so, you can simply use the notebook ``
 
 [2]  Marco Seeland, Michael Rzanny, Nedal Alaqraa, Jana Wäldchen, and Patrick Mäder, [Jena Flowers 30 Dataset, Harvard Dataverse (2017)](https://doi.org/10.7910/DVN/QDHYST).
 
-## How to use
-
-To download this repository, copy and paste the following:
-
-```bash
-git clone https://github.com/aleable/MODI
-```
-
-
-**You are ready to test the code! But if you want to know how click [HERE](https://github.com/aleable/MODI/tree/main/src/modi_flows).**
 
 ## Contacts
 
