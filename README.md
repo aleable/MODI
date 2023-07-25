@@ -21,7 +21,7 @@ The symbol “*” denotes equal contribution.
 All the dependencies needed to run the algorithm can be installed by:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ modi-flows
+pip install modi-flows
 ```
 Please note that one of the dependencies, scikit-umfpack, may not be easily installable using pip3. In this case, it is recommended to use conda for installing it:
 ```bash
