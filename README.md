@@ -3,8 +3,22 @@
 </p>
 
 ___
+<h1 align="center">
+MODI: Multicommodity Optimal Transport Dynamics on Images
+</h1>
+<p align="center">
+<a href="https://arxiv.org/abs/2205.02938" target="_blank">
+<img alt="ARXIV: 2205.02938" src="https://img.shields.io/badge/arXiv-2212.08593-red.svg">
+</a>
+  
+<a href="https://www.treedom.net/en/page/register?id=49Z-KEWX" target="_blank">
+<img alt="Treedom" src="https://img.shields.io/badge/CO2%20compensation%20-Treedom%20%F0%9F%8C%B4-brightgreen">
+</a>
 
-**🚧 Important note 🚧:** MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
+</p>
+
+> <strong>&#9888; Important note:<br/></strong> MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
+
 
 **MODI** (**M**ulticommodity **O**ptimal transport **D**ynamics on **I**mages) is a Python implementation of the algorithms used in:
 
