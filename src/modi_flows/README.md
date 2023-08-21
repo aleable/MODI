@@ -7,7 +7,6 @@
 ### Table of Contents  
 
 - [What's included](#whats-included)  
-- [Requirements](#requirements)  
 - [How to use](#how-to-use)  
     - [Parameters](#parameters)  
 - [I/O format](#io-format)  
@@ -29,16 +28,6 @@
 - ```initialization.py```: construction of the transport network and of the multicommodity problem
 - ```dynamics.py```: finite difference scheme to solve the multicommodity dynamics
 
-## Requirements
-
-All the dependencies needed to run the algorithm can be installed using ```setup.py```.
-This script can be executed with the command:
-
-```bash
-python setup.py
-```
-
-Now, you are ready to use the code! To do so, you can simply use the notebook ```dashboard.ipynb```, from which you can access our solver. <br/>
 
 ## How to use
 

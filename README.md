@@ -3,8 +3,22 @@
 </p>
 
 ___
+<h1 align="center">
+MODI: Multicommodity Optimal Transport Dynamics on Images
+</h1>
+<p align="center">
+<a href="https://arxiv.org/abs/2205.02938" target="_blank">
+<img alt="ARXIV: 2205.02938" src="https://img.shields.io/badge/arXiv-2212.08593-red.svg">
+</a>
+  
+<a href="https://www.treedom.net/en/page/register?id=49Z-KEWX" target="_blank">
+<img alt="Treedom" src="https://img.shields.io/badge/CO2%20compensation%20-Treedom%20%F0%9F%8C%B4-brightgreen">
+</a>
 
-**🚧 Important note 🚧:** MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
+</p>
+
+> <strong>&#9888; Important note:<br/></strong> MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
+
 
 **MODI** (**M**ulticommodity **O**ptimal transport **D**ynamics on **I**mages) is a Python implementation of the algorithms used in:
 
@@ -41,16 +55,6 @@ Now, you are ready to use the code! To do so, you can simply use the notebook ``
 
 [2]  Marco Seeland, Michael Rzanny, Nedal Alaqraa, Jana Wäldchen, and Patrick Mäder, [Jena Flowers 30 Dataset, Harvard Dataverse (2017)](https://doi.org/10.7910/DVN/QDHYST).
 
-## How to use
-
-To download this repository, copy and paste the following:
-
-```bash
-git clone https://github.com/aleable/MODI
-```
-
-
-**You are ready to test the code! But if you want to know how click [HERE](https://github.com/aleable/MODI/tree/main/src/modi_flows).**
 
 ## Contacts
 
