@@ -18,17 +18,28 @@ def preprocessing(mask_size=8):
     Returns:
         pd.DataFrame: A DataFrame containing preprocessed images and labels.
     """
-    path = os.getcwd() + "/../data/input/JF30_subset"
-    files = np.array([f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and f != ".DS_Store"])
+    # Construct the path to the data directory based on your project structure
+    base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    path = os.path.join(base_path, "data", "input", "JF30_subset")
+
+    files = np.array(
+        [
+            f
+            for f in os.listdir(path)
+            if os.path.isfile(os.path.join(path, f)) and f != ".DS_Store"
+        ]
+    )
     files = sorted(files, reverse=True)
 
     # File name to labels
-    file_data = pd.read_csv(path[:len(path) - 11] + "/classlabels.txt", sep=",", header=None)
+    file_data = pd.read_csv(
+        path[: len(path) - 11] + "/classlabels.txt", sep=",", header=None
+    )
     file_data.columns = ["file_name", "label"]
 
     file_data_dict = {}
     for index, row in file_data.iterrows():
-        file_data_dict[row['file_name']] = row['label']
+        file_data_dict[row["file_name"]] = row["label"]
 
     flowers_list = list()
     sizes = list()
@@ -38,9 +49,13 @@ def preprocessing(mask_size=8):
         # Trimming down to the first smaller integer mod 0 with the mask size
         w = data.shape[0] - (data.shape[0] % mask_size)
         h = data.shape[1] - (data.shape[1] % mask_size)
-        data_trimmed = np.stack([data[:w, :h, 0], data[:w, :h, 1], data[:w, :h, 2]], axis=2)
-        data_pooled = skimage.measure.block_reduce(data_trimmed, (mask_size, mask_size, 1), np.mean)
-        file_name = file.split('-')[0]
+        data_trimmed = np.stack(
+            [data[:w, :h, 0], data[:w, :h, 1], data[:w, :h, 2]], axis=2
+        )
+        data_pooled = skimage.measure.block_reduce(
+            data_trimmed, (mask_size, mask_size, 1), np.mean
+        )
+        file_name = file.split("-")[0]
         label = file_data_dict[file_name]
         flowers_list.append([data_pooled, label])
 
@@ -61,9 +76,9 @@ def visualize_dataset(flowers_dataframe):
     """
     fig, ax_all = plt.subplots(1, 1, figsize=(12, 6))
 
-    gs = matplotlib.gridspec.GridSpec(2, 5, figure=fig,
-                                      width_ratios=[1, 1, 1, 1, 1],
-                                      height_ratios=[1, 1])
+    gs = matplotlib.gridspec.GridSpec(
+        2, 5, figure=fig, width_ratios=[1, 1, 1, 1, 1], height_ratios=[1, 1]
+    )
 
     ax1 = plt.subplot(gs[0, 0])
     ax2 = plt.subplot(gs[0, 1])
@@ -78,7 +93,9 @@ def visualize_dataset(flowers_dataframe):
 
     ax = [ax1, ax2, ax3, ax4, ax5, ax6, ax7, ax8, ax9, ax10]
 
-    for i, pair in enumerate(list(zip(flowers_dataframe["image"], flowers_dataframe["label"]))):
+    for i, pair in enumerate(
+        list(zip(flowers_dataframe["image"], flowers_dataframe["label"]))
+    ):
         img, label = pair
         ax[i].imshow(np.array(img, dtype=int))
         ax[i].set_xticks([])
@@ -104,11 +121,15 @@ def visualize_resuts(img1, img_list, lab1, lab_list, j_list):
     """
     fig, ax_all = plt.subplots(1, 1, figsize=(16, 6))
 
-    gs = matplotlib.gridspec.GridSpec(2, 11, figure=fig,
-                                      width_ratios=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-                                      height_ratios=[1.6, 0.4],
-                                      hspace=0.1,
-                                      wspace=0)
+    gs = matplotlib.gridspec.GridSpec(
+        2,
+        11,
+        figure=fig,
+        width_ratios=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        height_ratios=[1.6, 0.4],
+        hspace=0.1,
+        wspace=0,
+    )
 
     ax1 = plt.subplot(gs[0, 2:])
 
