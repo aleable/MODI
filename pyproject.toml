@@ -36,13 +36,12 @@ dependencies = [
     'tqdm',
     'Pillow',
     'matplotlib',
-    'scikit-umfpack'
 ]
 
 [project.urls]
-homepage = "https://github.com/diegoabt/MODI"
-bug-tracker = "https://github.com/diegoabt/MODI/-/issues"
-repository = "https://github.com/diegoabt/MODI"
+homepage = "https://github.com/aleable/MODI"
+bug-tracker = "https://github.com/aleable/MODI/-/issues"
+repository = "https://github.com/aleable/MODI"
 
 [options]
 package_dir = {"" = "src"}
