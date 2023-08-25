@@ -15,6 +15,13 @@ MODI: Multicommodity Optimal Transport Dynamics on Images
 <img alt="Treedom" src="https://img.shields.io/badge/CO2%20compensation%20-Treedom%20%F0%9F%8C%B4-brightgreen">
 </a>
 
+<a href="https://pypi.org/project/modi-flows/" target="_blank">
+  <img alt="PyPI Version" src="https://img.shields.io/pypi/v/modi-flows">
+</a>
+
+<a href="https://github.com/aleable/MODI/actions/workflows/pytest.yml" target="_blank">
+  <img alt="Run Pytest" src="https://github.com/aleable/MODI/actions/workflows/pytest.yml/badge.svg">
+</a>
 </p>
 
 > <strong>&#9888; Important note:<br/></strong> MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
@@ -32,26 +39,31 @@ The symbol “*” denotes equal contribution.
 
 ## Requirements
 
-All the dependencies needed to run the algorithm can be installed by:
+All the dependencies needed to run the algorithm can be installed using the following command:
 
 ```bash
 pip install modi-flows
 ```
-Please note that one of the dependencies, scikit-umfpack, may not be easily installable using pip3. In this case, it is recommended to use conda for installing it:
+
+Please note that as of the latest release, the `scikit-umfpack` package is no longer a mandatory requirement for `modi-flows`. However, we highly recommend installing it to take advantage of enhanced performance. If you choose to install `scikit-umfpack`, it can be easily obtained from the conda repository:
+
 ```bash
 conda install -c conda-forge scikit-umfpack
 ```
-In case that the installation of `modi-flows` fails due to this, install first `scikit-umfpack` first and then try installing our package again from `pip`.
-
 Now, you are ready to use the code! To do so, you can simply use the notebook ```dashboard.ipynb```, from which you can access our solver. <br/>
 
 
+Sure, here's the updated section for the directory structure:
+
 ## What's included
 
-- ```code```: contains all the scripts necessary to run MODI, and a user-friendly Jupyter notebook (```dashboard.ipynb```) to interact with the code and visualize the results.
-- ```data/input```: contains a small sample of images taken from [2]. These can be preprocessed using ```code/dashboard.ipynb```. The original dataset can be directly downloaded as a .zip file [from the Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QDHYST)
-- ```setup.py```: setup file to build the Python environment.
-- ```misc```: supplementary files (poster of MODI).
+- `code`: Contains all the scripts necessary to run MODI, including the main implementation in `src/modi_flows/`.
+- `notebooks`: Holds user-friendly Jupyter notebooks, such as `dashboard.ipynb`, which allow you to interact with the code and visualize results.
+- `data`: Contains input data used in the examples.
+  - `input`: Holds a small sample of images taken from [2]. These images can be preprocessed using `code/dashboard.ipynb`. The complete dataset can be downloaded as a .zip file from the [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QDHYST).
+- `misc`: Includes supplementary files such as the MODI poster.
+- `tests`: Contains test scripts to validate the functionality of the code.
+- `docs`: Contains documentation files, including Sphinx configuration and source files.
 
 [2]  Marco Seeland, Michael Rzanny, Nedal Alaqraa, Jana Wäldchen, and Patrick Mäder, [Jena Flowers 30 Dataset, Harvard Dataverse (2017)](https://doi.org/10.7910/DVN/QDHYST).
 
