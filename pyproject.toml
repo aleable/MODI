@@ -7,7 +7,7 @@ name = "modi-flows"
 dynamic = ["version"]
 description = "MODI: Multicommodity Optimal Transport-based Dynamics for Image Classification"
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.9"
 license = {file = "LICENSE.txt"}
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -45,7 +45,7 @@ repository = "https://github.com/aleable/MODI"
 
 [options]
 package_dir = {"" = "src"}
-python_requires = ">=3.6"
+python_requires = ">=3.9"
 
 [options.packages.find]
 where = "src"
