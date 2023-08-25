@@ -19,6 +19,9 @@ MODI: Multicommodity Optimal Transport Dynamics on Images
   <img alt="PyPI Version" src="https://img.shields.io/pypi/v/modi-flows">
 </a>
 
+<a href="https://github.com/aleable/MODI/actions/workflows/pytest.yml" target="_blank">
+  <img alt="Run Pytest" src="https://github.com/aleable/MODI/actions/workflows/pytest.yml/badge.svg">
+</a>
 </p>
 
 > <strong>&#9888; Important note:<br/></strong> MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
