@@ -5,7 +5,9 @@
 <p align="center">
 Click me! ⬆️🖱️
 </p>
+
 ___
+
 <h1 align="center">
 MODI: Multicommodity Optimal Transport Dynamics on Images
 </h1>
