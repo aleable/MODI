@@ -1,9 +1,10 @@
 <p align="center">
 <a href=https://en.wikipedia.org/wiki/Amedeo_Modigliani><img src="https://user-images.githubusercontent.com/34717973/163191831-69d0a9d0-eadd-4bf4-bc65-836f2cda5fcb.png" width="650"></a>
-
-Click me! ⬆️🖱️
 </p>
 
+<p align="center">
+Click me! ⬆️🖱️
+</p>
 ___
 <h1 align="center">
 MODI: Multicommodity Optimal Transport Dynamics on Images
