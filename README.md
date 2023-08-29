@@ -1,5 +1,7 @@
 <p align="center">
 <a href=https://en.wikipedia.org/wiki/Amedeo_Modigliani><img src="https://user-images.githubusercontent.com/34717973/163191831-69d0a9d0-eadd-4bf4-bc65-836f2cda5fcb.png" width="650"></a>
+
+Click me! ⬆️🖱️
 </p>
 
 ___
@@ -10,7 +12,7 @@ MODI: Multicommodity Optimal Transport Dynamics on Images
 <a href="https://arxiv.org/abs/2205.02938" target="_blank">
 <img alt="ARXIV: 2205.02938" src="https://img.shields.io/badge/arXiv-2212.08593-red.svg">
 </a>
-  
+
 <a href="https://www.treedom.net/en/page/register?id=49Z-KEWX" target="_blank">
 <img alt="Treedom" src="https://img.shields.io/badge/CO2%20compensation%20-Treedom%20%F0%9F%8C%B4-brightgreen">
 </a>
@@ -28,9 +30,6 @@ MODI: Multicommodity Optimal Transport Dynamics on Images
 </a>
 
 </p>
-
-> <strong>&#9888; Important note:<br/></strong> MODI is currently under reconstruction, thus you may find some inconsistencies in its documentation. In case you have problems using the code, please do not hesitate to contact us.
-
 
 **MODI** (**M**ulticommodity **O**ptimal transport **D**ynamics on **I**mages) is a Python implementation of the algorithms used in:
 
@@ -58,11 +57,11 @@ conda install -c conda-forge scikit-umfpack
 Now, you are ready to use the code! To do so, you can simply use the notebook ```dashboard.ipynb```, from which you can access our solver. <br/>
 
 
-Sure, here's the updated section for the directory structure:
+Here's the directory structure:
 
 ## What's included
 
-- `code`: Contains all the scripts necessary to run MODI, including the main implementation in `src/modi_flows/`.
+- `src/modi_flows`: Contains all the scripts necessary to run MODI.
 - `notebooks`: Holds user-friendly Jupyter notebooks, such as `dashboard.ipynb`, which allow you to interact with the code and visualize results.
 - `data`: Contains input data used in the examples.
   - `input`: Holds a small sample of images taken from [2]. These images can be preprocessed using `code/dashboard.ipynb`. The complete dataset can be downloaded as a .zip file from the [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QDHYST).
