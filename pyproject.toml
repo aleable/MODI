@@ -31,7 +31,6 @@ dependencies = [
     'scipy',
     'scikit-image>=0.16.0',
     'jupyter',
-    'nbimporter',
     'pandas',
     'tqdm',
     'Pillow',
@@ -40,7 +39,7 @@ dependencies = [
 
 [project.urls]
 homepage = "https://github.com/aleable/MODI"
-bug-tracker = "https://github.com/aleable/MODI/-/issues"
+bug-tracker = "https://github.com/aleable/MODI/issues"
 repository = "https://github.com/aleable/MODI"
 
 [options]
