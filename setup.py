@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='modi-flows',
-    version='0.1.5',
+    version='0.1.7',
     description='MODI: Multicommodity Optimal Transport-based Dynamics for Image Classification',
     author=['Alessandro Lonardi','Diego Baptista'],
     author_email='diego.theuerkauf@tuebingen.mpg.de',
@@ -14,12 +14,10 @@ setup(
         'scipy',
         'scikit-image',
         'jupyter',
-        'nbimporter',
         'pandas',
         'tqdm',
         'Pillow',
-        'matplotlib',
-        #'scikit-umfpack'
+        'matplotlib'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
